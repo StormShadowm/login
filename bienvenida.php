@@ -1,22 +1,5 @@
-<?php
-    session_start();
-
-    if(!isset ($_SESSION ['usuario'] ) ){
-        echo '
-        <script>
-        alert("Inicia sesión antes de acceder a esta pagina");
-        window.location = "index.php";
-        </script>
-        ';
-        session_destroy();
-        die();       
-    }
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
  <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -28,9 +11,97 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/ccs/estilos_bienvenida.css" />
-</head>
-<body>
-    <h1>Bienvenido a tu pagina de gestión de usuarios</h1>
-    <a href ="php/cerrar_session.php" id="btn__cerrar-sesion">Cerrar sesión</a>
-</body>
+  </head>
+  <body>
+    <header>
+      <div class="header__superior">
+        <div class="logo">
+          <img src="img/netflix.png" alt="" />
+        </div>
+
+        <div class="search">
+          <input type="search" placeholder="¿Qué deseas buscar?" />
+        </div>
+      </div>
+      
+      <div>
+        <a href="php/cerrar_session.php" id="btn__cerrar-sesion">Cerrar sesión</a>
+      </div>
+
+      <div class="container__menu">
+        <div class="menu">
+          <nav>
+            <ul>
+              <li><a href="#" id="selected"></a></li>
+              <li>
+                <a href="#">Servicios</a>
+                <ul>
+                  <li><a href="#">DISEÑO WEB</a></li>
+                  <li><a href="#">DISEÑO GRAFICO</a></li>
+                  <li><a href="#">ORDENADORES</a></li>
+                  <li><a href="#">SERVIDORES</a></li>
+                  <li><a href="#">ANALISTA</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Nosotros</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Cursos</a></li>
+              <li><a href="#">Contactos</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <h2>Organización Internacional para la Estandarización</h2>
+
+        <p>
+          La Organización Internacional para la Estandarización conocida como
+          ISO, es un cuerpo internacional de establecimiento de estándares
+          compuesto por representantes de varias organizaciones nacionales de
+          estándares.
+        </p>
+      </article>
+
+      <article>
+        <h2>Organización Internacional para la Estandarización</h2>
+
+        <p>
+          La Organización Internacional para la Estandarización conocida como
+          ISO, es un cuerpo internacional de establecimiento de estándares
+          compuesto por representantes de varias organizaciones nacionales de
+          estándares.
+        </p>
+
+        <p>...</p>
+      </article>
+
+      <article>
+        <h2>Organización Internacional para la Estandarización</h2>
+
+        <p>
+          La Organización Internacional para la Estandarización conocida como
+          ISO, es un cuerpo internacional de establecimiento de estándares
+          compuesto por representantes de varias organizaciones nacionales de
+          estándares.
+        </p>
+
+        <p>...</p>
+      </article>
+      <article>
+        <h2>Organización Internacional para la Estandarización</h2>
+
+        <p>
+          La Organización Internacional para la Estandarización conocida como
+          ISO, es un cuerpo internacional de establecimiento de estándares
+          compuesto por representantes de varias organizaciones nacionales de
+          estándares.
+        </p>
+
+        <p>...</p>
+      </article>
+    </main>
+  </body>
 </html>
