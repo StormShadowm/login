@@ -1,3 +1,18 @@
+<?php
+session_start();
+
+if(!isset($_SESSION['usuario'])){
+  echo'
+  <script>
+    alert("Debes iniciar sessión antes");
+    window.location = "index.php";
+  </script>  
+  ';
+die();
+session_destroy();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
  <meta charset="UTF-8" />
@@ -16,16 +31,13 @@
     <header>
       <div class="header__superior">
         <div class="logo">
-          <img src="img/netflix.png" alt="" />
+          <img src="assets/images/netflix.png" alt="" />
         </div>
 
         <div class="search">
           <input type="search" placeholder="¿Qué deseas buscar?" />
+          <a id="btn__cerrar-sesion" href="php/cerrar_session.php" >Cerrar sesión</a>
         </div>
-      </div>
-      
-      <div>
-        <a href="php/cerrar_session.php" id="btn__cerrar-sesion">Cerrar sesión</a>
       </div>
 
       <div class="container__menu">
@@ -36,7 +48,7 @@
               <li>
                 <a href="#">Servicios</a>
                 <ul>
-                  <li><a href="#">DISEÑO WEB</a></li>
+                  <li><a href="diseno_web.php">DISEÑO WEB</a></li>
                   <li><a href="#">DISEÑO GRAFICO</a></li>
                   <li><a href="#">ORDENADORES</a></li>
                   <li><a href="#">SERVIDORES</a></li>
@@ -44,7 +56,7 @@
                 </ul>
               </li>
               <li><a href="#">Nosotros</a></li>
-              <li><a href="#">Blog</a></li>
+              <li><a href="#">Blog</a></li> 
               <li><a href="#">Cursos</a></li>
               <li><a href="#">Contactos</a></li>
             </ul>
