@@ -17,9 +17,11 @@ if(mysqli_num_rows($validar_login) > 0 ){
 }else{
     echo '
     <script>
-    alert("Usuario o contraseña incorrecta);
-    window.location = "../index.php";
+    alert("Usuario o contraseña incorrecta");
+    window.location = "../index.html";
     </script>
     ';
     exit;
 }
+
+?>

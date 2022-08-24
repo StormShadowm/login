@@ -21,6 +21,7 @@ header {
 
 .header__superior {
     max-width: 1200px;
+    height: 120px;
     margin: auto;
     display: flex;
     align-items: center;
@@ -186,8 +187,9 @@ nav ul li ul li a:hover {
 
 /*articulos*/
 
+
+
 main {
-    background: #f0f0f0;
     padding: 40px 20px;
     margin-top: 194px;
 }
@@ -196,7 +198,7 @@ article {
     max-width: 1200px;
     margin: 20px auto;
     padding: 40px;
-    background: #fff;
+    background-color: transp;
 }
 
 

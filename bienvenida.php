@@ -18,7 +18,7 @@ session_destroy();
  <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+    <title>Bienvenida</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -36,7 +36,7 @@ session_destroy();
 
         <div class="search">
           <input type="search" placeholder="¿Qué deseas buscar?" />
-          <a id="btn__cerrar-sesion" href="php/cerrar_session.php" >Cerrar sesión</a>
+          <a id="btn__cerrar-sesion" id="inputSearch" href="php/cerrar_session.php" >Cerrar sesión</a>
         </div>
       </div>
 
